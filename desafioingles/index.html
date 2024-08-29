@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies the document type and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling on mobile devices -->
+    <title>Challenge 01 - Javascript</title> <!-- Sets the title of the web page -->
+</head>
+
+<body>
+    <h1>Challenge 01 - Javascript</h1> <!-- Main heading of the page -->
+
+    <script>
+        // Prompt the user to enter two numbers
+        let number1 = Number(prompt("Enter the first number:")); // Prompts the user for the first number and converts it to a Number type
+        let number2 = Number(prompt("Enter the second number:")); // Prompts the user for the second number and converts it to a Number type
+
+        // Perform calculations
+        let sum = number1 + number2; // Calculates the sum of the two numbers
+        let subtraction = number1 - number2; // Calculates the difference between the two numbers
+        let multiplication = number1 * number2; // Calculates the product of the two numbers
+        let division = number2 !== 0 ? number1 / number2 : "Undefined (division by zero)"; // Divides the first number by the second; checks for division by zero
+        let remainder = number2 !== 0 ? number1 % number2 : "Undefined (division by zero)"; // Calculates the remainder of the division; checks for division by zero
+
+        // Check if the sum is even
+        let isSumEven = sum % 2 === 0 ? "The sum is even" : "The sum is odd"; // Determines if the sum is even or odd
+
+        // Check if the numbers are equal
+        let areNumbersEqual = number1 === number2 ? "The numbers are equal" : "The numbers are different"; // Checks if the two numbers are equal or different
+
+        // Display the results on the screen
+        document.write(`<p>Sum: ${sum}</p>`); // Displays the sum on the webpage
+        document.write(`<p>Subtraction: ${subtraction}</p>`); // Displays the subtraction result on the webpage
+        document.write(`<p>Multiplication: ${multiplication}</p>`); // Displays the multiplication result on the webpage
+        document.write(`<p>Division: ${division}</p>`); // Displays the division result or an error message on the webpage
+        document.write(`<p>Remainder: ${remainder}</p>`); // Displays the remainder or an error message on the webpage
+        document.write(`<p>${isSumEven}</p>`); // Displays whether the sum is even or odd on the webpage
+        document.write(`<p>${areNumbersEqual}</p>`); // Displays whether the numbers are equal or different on the webpage
+    </script>
+</body>
+
+</html>
